@@ -1,7 +1,108 @@
-/* font-family: 'Fraunces', serif;
-font-family: 'Montserrat', sans-serif; */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80%;
+  color: #000;
+}
+/* ************* */
+/* Typeography */
+/* ************* */
+/***** 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; 
+******/
+
+
+/* ************* */
+/* Mobile Image */
+.img{
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+/* ************* */
+/* Product Card */
+/* ************* */
+.product-card{
+ max-width: 1024px;
+ padding: auto;
+ background-color: #fff;
+ border-radius: 1rem;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#product-section{
+  background-color: hsl(30, 38%, 92%);
+  padding: 11rem 25rem;
+}
+.text-box{
+  margin-left: 1.5rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.3rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.perfume{
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 3.4px;
+  font-size: 1rem;
+}
+.product-name{
+  color:hsl(212, 21%, 14%);
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+}
+.description{
+  color: hsl(228, 12%, 48%);
+  /* It says 14px but i just made it to 1rem = 10px */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.img-box{
+  display: flex;
+}
+.price{
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+}
+.price-{
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 1rem;
+  margin: 1rem 0 0 1rem;
+}
+.btn-box{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+
+  padding: 1rem 4rem;
+  background-color: hsl(158, 36%, 37%);
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  /* margin: 0 2rem 0.5rem 0; */
+}
+.icon{
+  margin-right: 1rem;
 }
