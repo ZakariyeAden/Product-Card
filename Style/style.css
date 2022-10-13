@@ -25,11 +25,15 @@ font-family: 'Montserrat', sans-serif;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
+.img-{
+  display: none;
+}
 /* ************* */
 /* Product Card */
 /* ************* */
 .product-card{
- max-width: 1024px;
+ max-width: 130rem;
+ margin: 0 auto;
  padding: auto;
  background-color: #fff;
  border-radius: 1rem;
@@ -42,8 +46,11 @@ font-family: 'Montserrat', sans-serif;
   background-color: hsl(30, 38%, 92%);
   padding: 11rem 25rem;
 }
-.text-box{
+.mt-l{
   margin-left: 1.5rem;
+}
+.text-box{
+  /* margin-left: 1.5rem; */
   
   display: flex;
   flex-direction: column;
@@ -101,8 +108,48 @@ font-family: 'Montserrat', sans-serif;
   color: #fff;
   border-radius: 1rem;
   margin-right: 2rem;
+  transition: all 0.8ms;
   /* margin: 0 2rem 0.5rem 0; */
+}
+.btn:hover,
+.btn:active{
+  background:hsl(158, 62%, 23%);
+  
 }
 .icon{
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 425px){
+  #product-section {
+    padding: 3rem 2rem;
+}
+.img{
+  display: none;
+}
+.img-{
+  display: block;
+  width: 100%;
+
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.perfume{
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+.btn{
+  margin: 0 0 1.5rem 0;
+  padding: 1rem 6rem;
+}
+.text-box{
+  gap: 1rem;
+}
+}
+@media screen and (min-width: 768px){
+
 }
